@@ -45,4 +45,4 @@ Não representa necessariamente um produto final ou aplicação pronta para prod
 ## Autor
 
 Dário Gomes
-Desenvolvedor em evolução contínua 
+Desenvolvedor em evolução contínua
