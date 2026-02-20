@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackersgens_flutter/utils/palette.dart';
+import 'package:hackersgens_flutter/utils/theme.dart';
 import '/views/home_page.dart';
 
 void main() {
@@ -13,14 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter HackersGen',
-      theme: ThemeData(
-        primarySwatch: gray,
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: gray[500],
-          unselectedItemColor: gray[300],
-          backgroundColor: Colors.white,
-        ),
-      ),
+      theme: pokeFlutterTheme,
       home: const HomePage(),
     );
   }

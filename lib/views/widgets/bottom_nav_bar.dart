@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../utils/palette.dart';
+
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     super.key,
@@ -7,6 +9,8 @@ class BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
+
     return BottomNavigationBar(items: const [
       BottomNavigationBarItem(
         icon: Icon(Icons.home_filled), label: "Home"),
@@ -23,6 +27,9 @@ class BottomNavBar extends StatelessWidget {
         label: "Favorite",
       ),
       ],
+      selectedLabelStyle: textTheme.labelMedium,
+      unselectedLabelStyle: textTheme.labelMedium?.copyWith(color: gray[300]),
+      showUnselectedLabels: true,
     );
   }
 }
