@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackersgens_flutter/views/widgets/bottom_nav_bar.dart';
 import 'package:hackersgens_flutter/views/widgets/random_floating_button.dart';
+import 'package:hackersgens_flutter/views/widgets/styled_text.dart';
 
 import '../utils/palette.dart';
 
@@ -19,7 +20,8 @@ class HomePage extends StatelessWidget {
           Container(
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.only(top: 76, left: 24, right: 24),
-            child: Text("Pokédex", style: textTheme.textTheme.displaySmall,),
+            child: StyledText(text: "Pokédex", style: textTheme.textTheme.displaySmall!, textHeight: 44,
+            )
           ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 24),
