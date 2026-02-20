@@ -14,7 +14,7 @@ class RandomFloatingButton extends StatelessWidget {
       icon: Icon(
         Icons.auto_awesome,
         color: gray[500],),
-      label: Text("Random", style: TextStyle(color: gray[500]),),
+      label: Text("Random", style: Theme.of(context).textTheme.labelLarge,),
       onPressed: (){
         print("Random button pressed!");
       },
